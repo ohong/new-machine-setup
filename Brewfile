@@ -9,7 +9,6 @@ tap 'caskroom/cask'
   cask 'bartender'
   cask 'cheatsheet'
   cask 'fantastical'
-  cask 'google-chrome'
   cask 'notion'
   cask 'postman'
   cask 'tunnelbear'
@@ -18,7 +17,6 @@ tap 'caskroom/cask'
   mas 'FuzzyTime', id: 950297057
   mas 'LastPass', id: 926036361
   mas 'Magnet', id: 441258766
-  mas 'Sip', id: 507257563
   mas 'Slack', id: 803453959
   mas 'Spark', id: 1176895641
   mas 'Things', id: 904280696
