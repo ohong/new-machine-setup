@@ -9,26 +9,29 @@ This is how I set up a brand new machine, for software development and general p
 ![power ups](./screenshots/power ups.jpg)
 ![utilities](./screenshots/utilities.jpg)
 
-## Essential Apps
+## Essential
 
-- [ ] iTerm
-- [ ] Google Chrome
-- [ ] Atom
-- [ ] TunnelBear
-- [ ] Bear
-- [ ] Notion
 - [ ] Alfred 4
+- [ ] Atom
 - [ ] Bartender 3
+- [ ] Google Chrome
+- [ ] iTerm
 - [ ] Magnet
-- [ ] CheatSheet
+
+## Other
+
 - [ ] 1Password 7
 - [ ] AppCleaner
-
-## Other Apps
-
-- [ ] Spark
+- [ ] Bear
+- [ ] CheatSheet
+- [ ] DaisyDisk
+- [ ] Dropbox
 - [ ] Fantastical 2
+- [ ] Notion
+- [ ] Postman
+- [ ] Spark
 - [ ] Things
+- [ ] TunnelBear
 
 ## macOS Mojave v. 10.14 Setup
 
@@ -70,34 +73,6 @@ Open Terminal, which will be in your home folder by default (`/Users/you`). Crea
 touch Brewfile
 ```
 
-You can edit the file with TextEdit, or by typing `nano Brewfile`. If you choose to edit with nano, you can save the file by typing Control + O to save, and Control + X to exit the file.
-
-#### List of Programs
-
-Here are all the programs I intend to install with a brief description. You can choose to add or subtract any programs you'd like. They're all free.
-
-- [Cask](https://caskroom.github.io/) - an extension to Homebrew that will allow you to install almost any program that exists for a Mac
-- [Git](https://git-scm.com/) - for version control
-- [npm](https://www.npmjs.com/) - Node Package Manager (yes, we're installing package managers with package managers. Welcome to current year! Also, npm doesn't actually stand for that, but shh.
-- [Brackets](http://brackets.io/) - Was my text editor when I originally wrote this. Feel free to install Atom, VSC, or alternative instead or in addition to Brackets
-- [f.lux](https://justgetflux.com/) - Night Shift for your Mac. Save your eyes!
-- [Firefox](https://www.mozilla.org/en-US/firefox/products/) - a front end dev should have all the major browsers installed
-- [Gimp](https://www.gimp.org/) - a free Photoshop alternative
-- [Google Chrome](https://www.google.com/chrome/) - web browser
-- [MAMP](https://www.mamp.info/en/) - simplify and sandbox your development environment, if you choose
-- [Opera](http://www.opera.com/) - web browser
-- [Spectacle](https://www.spectacleapp.com/) - excellent free app for resizing your windows
-- [Sequel Pro](https://www.sequelpro.com/) - excellent free GUI for MySQL databases
-- [VLC Media Player](http://www.videolan.org/vlc/index.html) - it plays everything!
-- [Slack](https://slack.com/) - the communication app
-- [Sip](http://sipapp.io/) - indispensable free app to gather the color/HEX code of any pixel on your screen
-- [Simplenote](https://simplenote.com/) - my note-taking app of choice
-- [Todoist](https://en.todoist.com/) - my to-do app of choice
-- [Numbers](http://www.apple.com/numbers/) - the Apple equivalent of Excel - should come preinstalled
-- [Pages](http://www.apple.com/pages) - the Apple equivalent of Word
-
-> **Note:** I no longer use f.lux, as Mac comes with this feature now, and I use VSC instead of Brackets.
-
 Below are the entire contents of my `Brewfile`, which will install all the above programs with a single command.
 
 ```js
@@ -105,23 +80,26 @@ tap 'caskroom/cask'
   brew 'git'
   brew 'npm'
 
-  cask 'brackets'
-  cask 'flux'
-  cask 'firefox'
-  cask 'gimp'
+  cask '1password'
+  cask 'alfred'
+  cask 'appcleaner'
+  cask 'atom'
+  cask 'bartender'
+  cask 'cheatsheet'
+  cask 'fantastical'
   cask 'google-chrome'
-  cask 'mamp'
-  cask 'opera'
-  cask 'spectacle'
-  cask 'sequel-pro'
-  cask 'vlc'
+  cask 'notion'
+  cask 'postman'
+  cask 'tunnelbear'
 
-  mas 'Numbers', id: 409203825
-  mas 'Pages', id: 409201541
-  mas 'Slack', id: 803453959
+  mas 'Bear', id: 1091189122
+  mas 'FuzzyTime', id: 950297057
+  mas 'LastPass', id: 926036361
+  mas 'Magnet', id: 441258766
   mas 'Sip', id: 507257563
-  mas 'Simplenote', id: 692867256
-  mas 'Todoist', id: 585829637
+  mas 'Slack', id: 803453959
+  mas 'Spark', id: 1176895641
+  mas 'Things', id: 904280696
 ```
 
 Now simply run this command to install the bundle.
