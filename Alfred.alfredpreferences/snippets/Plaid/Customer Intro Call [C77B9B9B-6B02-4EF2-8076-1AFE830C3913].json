@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Agenda (feel free to add other items):\n1. Overview of WireBarley (mission, business, product)\n2. How is WireBarley using Plaid today? (Auth + Balance + Identity)\n3. What issues (if any) has your team been running into while building with Plaid?\n4. What's coming next in your product roadmap that Plaid could help power?",
+    "uid" : "C77B9B9B-6B02-4EF2-8076-1AFE830C3913",
+    "name" : "Customer Intro Call",
+    "keyword" : "c-intro"
+  }
+}

@@ -2,6 +2,87 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>customSites</key>
+	<dict>
+		<key>21E1BC27-14FC-4581-9449-8F97EAE71103</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>g</string>
+			<key>text</key>
+			<string>Google Cloud Search</string>
+			<key>url</key>
+			<string>https://cloudsearch.google.com/cloudsearch?q={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>3F127C3A-DF26-4D65-A1E8-69832B501919</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wat</string>
+			<key>text</key>
+			<string>Parse Access Token</string>
+			<key>url</key>
+			<string>https://wadsworth-web.plaid.com/accesstokens?val={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>50EBB5E4-0DA7-40DA-B472-DD4579949C8C</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wi</string>
+			<key>text</key>
+			<string>Wadsworth Pull Item by ID</string>
+			<key>url</key>
+			<string>https://wadsworth-web.plaid.com/items?val={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>5CD2E7D9-39F5-4004-A5CC-43B871AECE01</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wins</string>
+			<key>text</key>
+			<string>Search Institutions</string>
+			<key>url</key>
+			<string>https://wadsworth-web.plaid.com/institutions?val={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A2BED932-2AE2-4913-9D3C-94708EA54D34</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>wc</string>
+			<key>text</key>
+			<string>Wadsworth Load Client by ID</string>
+			<key>url</key>
+			<string>https://wadsworth-web.plaid.com/clients?val={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A485FB42-99AF-4DCC-89EE-46B6A11A1341</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>z</string>
+			<key>text</key>
+			<string>Search Zendesk by Ticket ID</string>
+			<key>url</key>
+			<string>https://plaid.zendesk.com/agent/tickets/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>
 </dict>
