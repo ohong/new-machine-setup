@@ -8,7 +8,9 @@
 	<true/>
 	<key>hidesubtext</key>
 	<integer>2</integer>
+	<key>showOnScreen</key>
+	<integer>1</integer>
 	<key>visibleresults</key>
-	<integer>6</integer>
+	<integer>4</integer>
 </dict>
 </plist>

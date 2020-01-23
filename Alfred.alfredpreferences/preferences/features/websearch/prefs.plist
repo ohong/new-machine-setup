@@ -11,7 +11,7 @@
 			<key>keyword</key>
 			<string>g</string>
 			<key>text</key>
-			<string>Google Cloud Search</string>
+			<string>Search Google Cloud for '{query}'</string>
 			<key>url</key>
 			<string>https://cloudsearch.google.com/cloudsearch?q={query}</string>
 			<key>utf8</key>
@@ -24,7 +24,7 @@
 			<key>keyword</key>
 			<string>wat</string>
 			<key>text</key>
-			<string>Parse Access Token</string>
+			<string>Parse access token '{query}'</string>
 			<key>url</key>
 			<string>https://wadsworth-web.plaid.com/accesstokens?val={query}</string>
 			<key>utf8</key>
@@ -37,7 +37,7 @@
 			<key>keyword</key>
 			<string>wi</string>
 			<key>text</key>
-			<string>Wadsworth Pull Item by ID</string>
+			<string>Pull item_id '{query}'</string>
 			<key>url</key>
 			<string>https://wadsworth-web.plaid.com/items?val={query}</string>
 			<key>utf8</key>
@@ -50,9 +50,22 @@
 			<key>keyword</key>
 			<string>wins</string>
 			<key>text</key>
-			<string>Search Institutions</string>
+			<string>Search institution '{query}'</string>
 			<key>url</key>
 			<string>https://wadsworth-web.plaid.com/institutions?val={query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>6AC35B72-3C73-41FC-9DCD-0DAB0ABE84A4</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>b</string>
+			<key>text</key>
+			<string>Search Bill.com for '{query}'</string>
+			<key>url</key>
+			<string>https://app.bill.com/Search?corgcId=00801ATMNNZQIUSNuzk6&amp;Query={query}&amp;Action=DoSearch&amp;submitValue=submitBtn</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
@@ -63,7 +76,7 @@
 			<key>keyword</key>
 			<string>wc</string>
 			<key>text</key>
-			<string>Wadsworth Load Client by ID</string>
+			<string>Search client_id '{query}'</string>
 			<key>url</key>
 			<string>https://wadsworth-web.plaid.com/clients?val={query}</string>
 			<key>utf8</key>
@@ -76,9 +89,22 @@
 			<key>keyword</key>
 			<string>z</string>
 			<key>text</key>
-			<string>Search Zendesk by Ticket ID</string>
+			<string>Go to Zendesk Ticket ID '{query}'</string>
 			<key>url</key>
 			<string>https://plaid.zendesk.com/agent/tickets/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
+		<key>A9CD0E13-ECAF-48E8-8B24-3C41E96EDA95</key>
+		<dict>
+			<key>enabled</key>
+			<false/>
+			<key>keyword</key>
+			<string>li2</string>
+			<key>text</key>
+			<string>Search Linkedin for '{query}'</string>
+			<key>url</key>
+			<string>https://www.linkedin.com/search/results/all/?authorCompany=%5B%5D&amp;authorIndustry=%5B%5D&amp;contactInterest=%5B%5D&amp;facetCity=%5B%5D&amp;facetCompany=%5B%5D&amp;facetConnectionOf=%5B%5D&amp;facetCurrentCompany=%5B%5D&amp;facetCurrentFunction=%5B%5D&amp;facetGeoRegion=%5B%5D&amp;facetGeoUrn=%5B%5D&amp;facetGroup=%5B%5D&amp;facetGuides=%5B%5D&amp;facetIndustry=%5B%5D&amp;facetNetwork=%5B%5D&amp;facetNonprofitInterest=%5B%5D&amp;facetPastCompany=%5B%5D&amp;facetProfessionalEvent=%5B%5D&amp;facetProfileLanguage=%5B%5D&amp;facetRegion=%5B%5D&amp;facetSchool=%5B%5D&amp;facetSeniority=%5B%5D&amp;facetServiceCategory=%5B%5D&amp;facetState=%5B%5D&amp;groups=%5B%5D&amp;keywords={query}&amp;origin=GLOBAL_SEARCH_HEADER&amp;page=1&amp;refresh=false&amp;skillExplicit=%5B%5D&amp;topic=%5B%5D</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

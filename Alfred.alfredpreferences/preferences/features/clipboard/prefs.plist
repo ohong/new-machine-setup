@@ -8,5 +8,9 @@
 	<string>Hero</string>
 	<key>autoExpandSnippetTriggerPlaySound</key>
 	<false/>
+	<key>snippetKeyword</key>
+	<string>s</string>
+	<key>viewerKeyword</key>
+	<string>clip</string>
 </dict>
 </plist>

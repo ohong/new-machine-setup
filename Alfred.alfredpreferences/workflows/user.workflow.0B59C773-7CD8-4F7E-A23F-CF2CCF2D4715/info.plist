@@ -5,7 +5,7 @@
 	<key>bundleid</key>
 	<string></string>
 	<key>category</key>
-	<string>Productivity</string>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>294A52DC-6FB9-4549-8665-D58FDE0223F3</key>
@@ -29,7 +29,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Lock Screen</string>
+	<string>Plaid Security</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -44,11 +44,11 @@
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>hotkey</key>
-				<integer>50</integer>
+				<integer>119</integer>
 				<key>hotmod</key>
-				<integer>524288</integer>
+				<integer>8388608</integer>
 				<key>hotstring</key>
-				<string>`</string>
+				<string>↘</string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
