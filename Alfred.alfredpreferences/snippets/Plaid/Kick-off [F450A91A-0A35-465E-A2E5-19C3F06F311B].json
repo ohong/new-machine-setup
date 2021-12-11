@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "1. Overview of what X is building (the mission, business, product)\n2. How is X using Plaid today? (product1 + product2)\n3. What issues (if any) has your team been running into while building with Plaid?\n4. What’s coming next in your product roadmap that Plaid could help power?\n5. Anything else you’d like us to discuss.",
+    "uid" : "F450A91A-0A35-465E-A2E5-19C3F06F311B",
+    "name" : "Kick-off",
+    "keyword" : "kick"
+  }
+}

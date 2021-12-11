@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "For latest institution updates feel free to reference our Status Dashboard. With regards to Capital One, there is no way for any of our clients to prevent their users from connecting their account with Link, but an idea to inform your users about Capital One issues would be to build in a custom UI message based on onSuccess() or onExit() returning ins_9 in the callback response metadata (ref: docs). ",
+    "uid" : "66DC1499-EEBA-45D8-B5DE-25351BE4E88D",
+    "name" : "onExit()",
+    "snippetrtf" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1671\\cocoasubrtf600\n{\\fonttbl\\f0\\froman\\fcharset0 Times-Roman;}\n{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red0\\green0\\blue233;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c0\\c0\\c93333;}\n\\deftab720\n\\pard\\pardeftab720\\sl280\\partightenfactor0\n\n\\f0\\fs24 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\outl0\\strokewidth0 \\strokec2 For latest institution updates feel free to reference our {\\field{\\*\\fldinst{HYPERLINK \"https:\/\/dashboard.plaid.com\/activity\/status\"}}{\\fldrslt \\cf3 \\ul \\ulc3 \\strokec3 Status Dashboard}}. With regards to Capital One, there is no way for any of our clients to prevent their users from connecting their account with Link, but an idea to inform your users about Capital One issues would be to build in a custom UI message based on\\'a0onSuccess()\\'a0or\\'a0onExit() returning\\'a0ins_9\\'a0in the callback response metadata (ref:\\'a0{\\field{\\*\\fldinst{HYPERLINK \"https:\/\/plaid.com\/docs\/#onexit-callback\"}}{\\fldrslt \\cf3 \\ul \\ulc3 \\strokec3 docs}}).\\'a0}",
+    "keyword" : "onexit"
+  }
+}

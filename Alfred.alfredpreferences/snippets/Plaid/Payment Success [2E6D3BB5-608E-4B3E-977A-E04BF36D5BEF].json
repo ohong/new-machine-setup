@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Payment Success:\nPlaid can provide insights into the status of an ACH bank transfer sooner, enabling developers to understand in 24 hours or less whether or not the transfer has successfully posted or will result in a return (incl. R01, R02, R03, R20).\nWith this, there's no hold on funds (typically 3 — 4 days post transaction with most processors), so Plaid clients can make goods, services, or funds available to their consumers sooner, while protecting against losses from failed transactions.",
+    "uid" : "2E6D3BB5-608E-4B3E-977A-E04BF36D5BEF",
+    "name" : "Payment Success",
+    "keyword" : "success"
+  }
+}

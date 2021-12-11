@@ -26,7 +26,7 @@
 			<key>text</key>
 			<string>Parse access token '{query}'</string>
 			<key>url</key>
-			<string>https://wadsworth-web.plaid.com/accesstokens?val={query}</string>
+			<string>https://wadsworth-web.plaid.io/accesstokens?val={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
@@ -39,7 +39,7 @@
 			<key>text</key>
 			<string>Pull item_id '{query}'</string>
 			<key>url</key>
-			<string>https://wadsworth-web.plaid.com/items?val={query}</string>
+			<string>https://wadsworth-web.plaid.io/items?val={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
@@ -52,7 +52,7 @@
 			<key>text</key>
 			<string>Search institution '{query}'</string>
 			<key>url</key>
-			<string>https://wadsworth-web.plaid.com/institutions?val={query}</string>
+			<string>https://wadsworth-web.plaid.io/institutions?val={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>
@@ -78,7 +78,7 @@
 			<key>text</key>
 			<string>Search client_id '{query}'</string>
 			<key>url</key>
-			<string>https://wadsworth-web.plaid.com/clients?val={query}</string>
+			<string>https://wadsworth-web.plaid.io/clients?val={query}</string>
 			<key>utf8</key>
 			<true/>
 		</dict>

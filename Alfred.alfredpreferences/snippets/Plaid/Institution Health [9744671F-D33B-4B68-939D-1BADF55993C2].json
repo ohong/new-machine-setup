@@ -1,0 +1,9 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "For the latest institution health, please query our Status Dashboard or API.",
+    "uid" : "9744671F-D33B-4B68-939D-1BADF55993C2",
+    "name" : "Institution Health",
+    "snippetrtf" : "{\\rtf1\\ansi\\ansicpg1252\\cocoartf1671\\cocoasubrtf600\n{\\fonttbl\\f0\\froman\\fcharset0 Times-Roman;}\n{\\colortbl;\\red255\\green255\\blue255;\\red0\\green0\\blue0;\\red0\\green0\\blue233;}\n{\\*\\expandedcolortbl;;\\cssrgb\\c0\\c0\\c0;\\cssrgb\\c0\\c0\\c93333;}\n\\deftab720\n\\pard\\pardeftab720\\sl280\\partightenfactor0\n\n\\f0\\fs24 \\cf2 \\expnd0\\expndtw0\\kerning0\n\\outl0\\strokewidth0 \\strokec2 For the latest institution health, please query our {\\field{\\*\\fldinst{HYPERLINK \"https:\/\/dashboard.plaid.com\/activity\/status\"}}{\\fldrslt \\cf3 \\ul \\ulc3 \\strokec3 Status Dashboard}} or {\\field{\\*\\fldinst{HYPERLINK \"http:\/\/plaid.com\/docs\/#institution-status\"}}{\\fldrslt \\cf3 \\ul \\ulc3 \\strokec3 API}}.}",
+    "keyword" : "checkstatus"
+  }
+}

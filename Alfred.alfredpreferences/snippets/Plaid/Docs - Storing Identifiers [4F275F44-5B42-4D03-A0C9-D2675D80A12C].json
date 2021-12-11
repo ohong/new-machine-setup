@@ -1,8 +1,8 @@
 {
   "alfredsnippet" : {
-    "snippet" : "plaid.com\/docs\/#storing-plaid-api-identifiers",
+    "snippet" : "https:\/\/plaid.com\/docs\/launch-checklist\/#storage--logging",
     "uid" : "4F275F44-5B42-4D03-A0C9-D2675D80A12C",
     "name" : "Docs - Storing Identifiers",
-    "keyword" : "d-storeid"
+    "keyword" : "d-store"
   }
 }

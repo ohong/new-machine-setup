@@ -8,8 +8,21 @@
 	<string>Hero</string>
 	<key>autoExpandSnippetTriggerPlaySound</key>
 	<false/>
+	<key>hotkey</key>
+	<dict>
+		<key>key</key>
+		<integer>8</integer>
+		<key>mod</key>
+		<integer>262144</integer>
+		<key>string</key>
+		<string>C</string>
+	</dict>
+	<key>persistFor</key>
+	<integer>0</integer>
 	<key>snippetKeyword</key>
 	<string>s</string>
+	<key>snippetMatchWordBased</key>
+	<false/>
 	<key>viewerKeyword</key>
 	<string>clip</string>
 </dict>

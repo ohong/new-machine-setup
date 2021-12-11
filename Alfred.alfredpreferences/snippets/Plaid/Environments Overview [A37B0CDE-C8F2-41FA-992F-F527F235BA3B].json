@@ -1,8 +1,8 @@
 {
   "alfredsnippet" : {
-    "snippet" : "https:\/\/support.plaid.com\/hc\/en-us\/articles\/360010407233-Plaid-environments-overview",
+    "snippet" : "https:\/\/plaid.com\/docs\/quickstart\/glossary\/#environments",
     "uid" : "A37B0CDE-C8F2-41FA-992F-F527F235BA3B",
     "name" : "Environments Overview",
-    "keyword" : "env"
+    "keyword" : "d-env"
   }
 }

@@ -1052,31 +1052,30 @@ class Workflow(object):
         data = {}
 
         for key in (
-                'alfred_debug',
-                'alfred_preferences',
-                'alfred_preferences_localhash',
-                'alfred_theme',
-                'alfred_theme_background',
-                'alfred_theme_subtext',
-                'alfred_version',
-                'alfred_version_build',
-                'alfred_workflow_bundleid',
-                'alfred_workflow_cache',
-                'alfred_workflow_data',
-                'alfred_workflow_name',
-                'alfred_workflow_uid',
-                'alfred_workflow_version'):
+                'debug',
+                'preferences',
+                'preferences_localhash',
+                'theme',
+                'theme_background',
+                'theme_subtext',
+                'version',
+                'version_build',
+                'workflow_bundleid',
+                'workflow_cache',
+                'workflow_data',
+                'workflow_name',
+                'workflow_uid',
+                'workflow_version'):
 
-            value = os.getenv(key)
+            value = os.getenv('alfred_' + key, '')
 
-            if isinstance(value, str):
-                if key in ('alfred_debug', 'alfred_version_build',
-                           'alfred_theme_subtext'):
+            if value:
+                if key in ('debug', 'version_build', 'theme_subtext'):
                     value = int(value)
                 else:
                     value = self.decode(value)
 
-            data[key[7:]] = value
+            data[key] = value
 
         self._alfred_env = data
 
@@ -1113,7 +1112,7 @@ class Workflow(object):
         :rtype: ``bool``
 
         """
-        return self.alfred_env.get('debug') == '1'
+        return self.alfred_env.get('debug') == 1
 
     @property
     def name(self):
@@ -2640,28 +2639,27 @@ class Workflow(object):
 
     def open_log(self):
         """Open :attr:`logfile` in default app (usually Console.app)."""
-        subprocess.call(['open', self.logfile])
+        subprocess.call(['open', self.logfile])  # nosec
 
     def open_cachedir(self):
         """Open the workflow's :attr:`cachedir` in Finder."""
-        subprocess.call(['open', self.cachedir])
+        subprocess.call(['open', self.cachedir])  # nosec
 
     def open_datadir(self):
         """Open the workflow's :attr:`datadir` in Finder."""
-        subprocess.call(['open', self.datadir])
+        subprocess.call(['open', self.datadir])  # nosec
 
     def open_workflowdir(self):
         """Open the workflow's :attr:`workflowdir` in Finder."""
-        subprocess.call(['open', self.workflowdir])
+        subprocess.call(['open', self.workflowdir])  # nosec
 
     def open_terminal(self):
         """Open a Terminal window at workflow's :attr:`workflowdir`."""
-        subprocess.call(['open', '-a', 'Terminal',
-                        self.workflowdir])
+        subprocess.call(['open', '-a', 'Terminal', self.workflowdir])  # nosec
 
     def open_help(self):
         """Open :attr:`help_url` in default browser."""
-        subprocess.call(['open', self.help_url])
+        subprocess.call(['open', self.help_url])  # nosec
 
         return 'Opening workflow help URL in browser'
 

@@ -1,8 +1,8 @@
 {
   "alfredsnippet" : {
-    "snippet" : "https:\/\/support.plaid.com\/hc\/en-us\/articles\/360012859833",
+    "snippet" : "https:\/\/plaid.com\/docs\/errors\/",
     "uid" : "2E3A02D0-F86F-4349-A015-799DA4EAD72E",
     "name" : "Handling Plaid Errors",
-    "keyword" : "error"
+    "keyword" : "d-error"
   }
 }

@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "Happy to explain the pricing model for Plaid's \"Scale\" tier: It is a monthly committed spend. Each month, you will be responsible for the greater of (i) the API Services Commitment fee and (ii) the volume of API Services consumed at their corresponding net unit pricing. As such, as long as your usage is above $500 each month, the minimum should be invisible to both parties.",
+    "uid" : "024DDDBA-7BFB-4EB1-B6E0-546E4BC39A02",
+    "name" : "Minimums",
+    "keyword" : "mins"
+  }
+}
