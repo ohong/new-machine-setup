@@ -108,6 +108,19 @@
 			<key>utf8</key>
 			<true/>
 		</dict>
+		<key>D51890F2-C58A-41EE-A91A-352DFDF53005</key>
+		<dict>
+			<key>enabled</key>
+			<true/>
+			<key>keyword</key>
+			<string>cw</string>
+			<key>text</key>
+			<string>Search Careful Words for '{query}'</string>
+			<key>url</key>
+			<string>https://carefulwords.com/{query}</string>
+			<key>utf8</key>
+			<true/>
+		</dict>
 	</dict>
 	<key>onlyShowEnabledInPrefs</key>
 	<true/>

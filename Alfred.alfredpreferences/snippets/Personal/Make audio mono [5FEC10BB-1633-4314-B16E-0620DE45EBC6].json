@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "ffmpeg -i name.m4a -ac 1 nameMono.m4a",
+    "uid" : "5FEC10BB-1633-4314-B16E-0620DE45EBC6",
+    "name" : "Make audio mono",
+    "keyword" : "to-mono"
+  }
+}

@@ -11,19 +11,23 @@
 	<key>hotkey</key>
 	<dict>
 		<key>key</key>
-		<integer>8</integer>
+		<integer>-1</integer>
 		<key>mod</key>
-		<integer>262144</integer>
+		<integer>-1</integer>
 		<key>string</key>
-		<string>C</string>
+		<string></string>
 	</dict>
 	<key>persistFor</key>
-	<integer>0</integer>
+	<integer>2</integer>
+	<key>persistForFiles</key>
+	<integer>2</integer>
+	<key>persistForImages</key>
+	<integer>2</integer>
 	<key>snippetKeyword</key>
 	<string>s</string>
 	<key>snippetMatchWordBased</key>
 	<false/>
 	<key>viewerKeyword</key>
-	<string>clip</string>
+	<string>c</string>
 </dict>
 </plist>

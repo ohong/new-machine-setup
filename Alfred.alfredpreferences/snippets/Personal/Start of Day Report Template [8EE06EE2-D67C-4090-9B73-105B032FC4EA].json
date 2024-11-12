@@ -1,0 +1,8 @@
+{
+  "alfredsnippet" : {
+    "snippet" : "{date} SOD Report\n\nOBT: 1-line description of my “One Big Thing” today!\n\nWhat else I’m working on \n\nSwing thought\n{insert swing thought here}\n\nLet me know if you have any questions or comments.\n\nOscar",
+    "uid" : "8EE06EE2-D67C-4090-9B73-105B032FC4EA",
+    "name" : "Start of Day Report Template",
+    "keyword" : "sod"
+  }
+}
