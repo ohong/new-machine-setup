@@ -1,61 +1,93 @@
-# new-machine-setup
+# How I set up a new machine (README)
 
-This is how I set up a brand new machine, for software development and general productivity.
+**Motivation:** The follow spec details how I set up a brand new macOS computer, for writing, software development, and everyday productivity. I maintain it to streamline the process each time I do it.
 
-## Screenshots
-
-![dev](./screenshots/dev.jpg)
-![work](./screenshots/work.jpg)
-![power ups](./screenshots/power ups.jpg)
-![utilities](./screenshots/utilities.jpg)
-
-## Essential
-
-- [ ] Alfred 4
-- [ ] Atom
-- [ ] Bartender 3
-- [ ] Google Chrome
-- [ ] iTerm
-- [ ] Magnet
-
-## Other
-
-- [ ] 1Password 7
+**Last updated:** 12 Nov 2024
+## Info
+* Stored at [ohong/new-machine-setup](https://github.com/ohong/new-machine-setup)
+  * https://github.com/ohong/new-machine-setup/blob/master/Brewfile
+* Filename: `~/dev/new-machine-setup/Brewfile`
+* Current OS: macOS Sequoia 15.1
+## Changelog
+### Nov 2024
+* Added a changelog
+* Removed the screenshots, unnecessary
+* No longer using (remove from Brewfile):
+  * Alfred, replaced by Raycast
+  * Atom, replaced by VS Code & Cursor
+  * Google Chrome, replaced by Arc browser
+  * iTerm, replaced by Warp
+  * Magnet, replaced by Raycast (Window Management)
+  * Dropbox, just use the web interface, or Google Drive or iCloud storage
+  * Fantastical, replaced by Notion Calendar
+  * Spark, replaced by Superhuman
+  * TunnelBear, replaced by NordVPN
+* Added new apps I use now under “Applications” & to the Brewfile
+* Removed step of adding `brewup` alias to my bash profile
+* Removed steps for installing Node JS, npm, Ruby, composer, virtual hosts. I just don’t use them enough to justify doing on every fresh setup.
+* Removed section on customising iTerm, I just use Warp now
+* Removed section on changing OS defaults from command line
+* Shortened section on SSH & combined it with GitHub set up
+## Applications
+All via the `Brewfile` `cask` and `mas` commands.
+### Essential
+* [ ] Arc — web browser
+* [ ] Bartender 5 — menu bar organiser
+* [ ] Bear — Markdown notes
+* [ ] Notion — 2nd brain
+* [ ] 1Password — password manager
+* [ ] Raycast — launcher
+* [ ] Things 3 — task manager
+### Programming
+- [ ] Cursor — AI code editor
+- [ ] Linear — project management
+- [ ] Postman — API testing tool
+- [ ] Visual Studio Code
+- [ ] Warp — a better terminal
+### Other
 - [ ] AppCleaner
-- [ ] Bear
 - [ ] CheatSheet
+- [ ] Clay
+- [ ] Cubby
 - [ ] DaisyDisk
-- [ ] Dropbox
-- [ ] Fantastical 2
-- [ ] Notion
-- [ ] Postman
-- [ ] Spark
-- [ ] Things
-- [ ] TunnelBear
-
-## macOS Mojave v. 10.14 Setup
-
-The Setup Assistant will launch once you turn the computer on. Here you'll enter your language, time zone, Apple ID, and so on. I choose not to use "Migration Assistant", and set up my computer from scratch. The first thing you should do is **update macOS** to get the latest security updates and patches.
-
-If you're setting up for the first time, you'll have to install App Store software through the App Store itself, but if you've installed them before, you'll be able to use Homebrew, Cask, and Mas to install all your programs from the command line.
-
-### Homebrew
-
-Install the [Homebrew](http://brew.sh/) package manager. This will allow you to install almost any app from the command line. In previous versions, you'd have to install XCode or Command Line Tools before using this, but that step is no longer necessary.
-
+- [ ] Descript
+- [ ] Discord
+- [ ] Limitless
+- [ ] LINE
+- [ ] Logi Options+
+- [ ] Loom
+- [ ] MacWhisper
+- [ ] NordVPN
+- [ ] Notion Calendar
+- [ ] Numi
+- [ ] One Thing
+- [ ] Perplexity
+- [ ] Poe
+- [ ] Raindrop
+- [ ] Rewind
+- [ ] Rize — AI time tracking
+- [ ] RODE Connect
+- [ ] Screen Studio
+- [ ] Shortcat
+- [ ] Slack
+- [ ] Spotify
+- [ ] Streamlabs — Live streaming
+- [ ] Superhuman
+- [ ] Texts — Unified inbox for messages
+- [ ] Wispr Flow — Voice dictation
+- [ ] Zoom
+## Install via command line
+### Homebrew (macOS package manager)
 ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-#### Mac App Store
+#### Mac App Store (mas)
 
 The Mac App Store command line interface, or [mas-cli](https://github.com/mas-cli/mas), will allow you to install from the App Store.
-
 ```bash
 brew install mas
 ```
-
-##### Sign in
 
 If you haven't already logged into the App Store, you can do so now.
 
@@ -65,7 +97,7 @@ mas signin email@email.com
 
 #### Brewfile
 
-Now I'll create a file called `Brewfile` in my main directory, which will list all the programs I want on the computer, and install them in a bundle.
+`Brewfile` lists all the programs I want on my machine and install them in a bundle.
 
 Open Terminal, which will be in your home folder by default (`/Users/you`). Create the file.
 
@@ -76,28 +108,64 @@ touch Brewfile
 Below are the entire contents of my `Brewfile`, which will install all the above programs with a single command.
 
 ```js
-tap 'caskroom/cask'
-  brew 'git'
-  brew 'npm'
+brew 'ata'
+brew 'cask'
+brew 'gh'
+brew 'git'
+brew 'htop'
+brew 'imagemagick'
+brew 'mailsy'
+brew 'mas'
+brew 'mpv'
+brew 'python'
+brew 'speedtest-cli'
+brew 'wifi-password'
+brew 'yt-dlp'
 
-  cask '1password'
-  cask 'alfred'
-  cask 'appcleaner'
-  cask 'atom'
-  cask 'bartender'
-  cask 'cheatsheet'
-  cask 'fantastical'
-  cask 'notion'
-  cask 'postman'
-  cask 'tunnelbear'
+cask '1password'
+cask 'appcleaner'
+cask 'arc'
+cask 'automattic-texts'
+cask 'bartender'
+cask 'cheatsheet'
+cask 'clay'
+cask 'cursor'
+cask 'daisydisk'
+cask 'descript'
+cask 'discord'
+cask 'limitless'
+cask 'linear-linear'
+cask 'logi-options+'
+cask 'loom'
+cask 'macwhisper'
+cask 'nordvpn'
+cask 'notion'
+cask 'notion-calendar'
+cask 'numi'
+cask 'poe'
+cask 'postman'
+cask 'raindropio'
+cask 'raycast'
+cask 'rewind'
+cask 'rize'
+cask 'rode-connect'
+cask 'screen-studio'
+cask 'shortcat'
+cask 'slack'
+cask 'spotify'
+cask 'streamlabs'
+cask 'superhuman'
+cask 'thingsmacsandboxhelper'
+cask 'visual-studio-code'
+cask 'zoom'
 
-  mas 'Bear', id: 1091189122
-  mas 'FuzzyTime', id: 950297057
-  mas 'LastPass', id: 926036361
-  mas 'Magnet', id: 441258766
-  mas 'Slack', id: 803453959
-  mas 'Spark', id: 1176895641
-  mas 'Things', id: 904280696
+mas 'Bear', id: 1091189122
+mas 'FuzzyTime', id: 950297057
+mas 'Kindle', id: 302584613
+mas 'LINE', id: 539883307
+mas 'One Thing', id: 1604176982
+mas 'Perplexity', id: 6714467650
+mas 'Things', id: 904280696
 ```
 
 Now simply run this command to install the bundle.
@@ -106,52 +174,19 @@ Now simply run this command to install the bundle.
 brew bundle install
 ```
 
-### Bash
-
-#### Config - `~/.bash_profile`
-
-Now that we have all our programs installed and Homebrew all nice and new, we should create a simple script to keep Homebrew up to date. I found this handy command on this [Best of Homebrew](https://gist.github.com/indiesquidge/ec010eca3ffa254788c2) gist.
-
-First, create a `.bash_profile` dotfile in your home folder.
-
+Alternatively, I can bundle install from a Brewfile hosted on my GitHub, without creating a local copy:
 ```bash
-touch .bash_profile
+curl -fsSL https://raw.githubusercontent.com/ohong/new-machine-setup/blob/master/Brewfile | brew bundle --file=-
 ```
 
-We'll create a bash alias to combine all the commands to keep Homebrew clean and up to date.
-
-```bash
-alias brewup='brew update; brew upgrade; brew cleanup; brew doctor'
-
-```
-
-Run the following command.
-
-```bash
-source ~/.bash_profile
-
-```
-
-Now you can run `brewup` to update, upgrade, prune, cleanup, and doctor Homebrew. It's a good idea to do this often, even daily.
-
-```bash
-brewup
-```
-
-### GitHub
+### GitHub & SSH
+* [Generate a new SSH key and add it to to the ssh-agent](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+* [Add the new SSH key to my GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account)
 
 #### Config - `~/.gitconfig`
 
-The first thing you should do with Git is [set your global configuration](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup). We can do this by running a lot of small commands which will update the Git configuration file.
-
 ```bash
-git config --global user.name "First Last"
-```
-
-Or we can just create the Git configuration file and input it all ourselves.
-
-```bash
-touch .gitconfig
+touch ~/.gitconfig
 ```
 
 Here I'll input my name, email, GitHub username, some aliases to be able to type less and do more, and connect Git to the OS X Keychain so I don't have to type my username and password every time I want to push to GitHub.
@@ -172,220 +207,28 @@ Here I'll input my name, email, GitHub username, some aliases to be able to type
     puom = pull origin master
     puog = pull origin gh-pages
     cob = checkout -b
-[credential]
-    helper = osxkeychain
 ```
 
-With the above aliases, I can run `git s` instead of `git status`, for example. The less I have to type repeatedly, the happier I am.
+With the above aliases, I can run `git s` instead of `git status`, for example.
 
-### SSH
-
-If you use SSH (Secure Shell) to connect to any remote hosts via the command line, you can simplify the process.
-
-#### Config - `~/.ssh/config`
-
-Create an SSH config file.
-
-```bash
-touch .ssh/config
-```
-
-Add the following contents, changing the variables for any hosts that you connect to. Using the below will connect to `-i key.pem example-user@example.com`. You can remove the IdentityFile if you don't connect with a pem key. The output will then simply be `example-user@example.com` and you'll be prompted for password authentication.
-
-```bash
-Host example
-  HostName example.com
-  User example-user
-  IdentityFile key.pem
-
-```
-
-Now just run the alias to connect.
-
-```bash
-ssh example
-```
-
-#### Generate SSH key
-
-You can [generate an SSH key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) to distribute.
-
-```bash
-ssh-keygen -t rsa -b 4096 -C "email@email.com"
-```
-
-### Node.js
-
-We're going to use [Node Version Manager (nvm)](https://github.com/creationix/nvm/blob/master/README.markdown) to install Node.js.
-
-```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
-```
-
-Install the latest version.
-
-```bash
-nvm install node
-```
-
-Restart terminal and run the final command.
-
-```bash
-nvm use node
-```
-
-Confirm that you are using the latest version.
-
-```bash
-node -v
-```
-
-You can also test with `which node`, which will output your Node path and version number.
-
-```terminal
-/Users/yourusername/.nvm/versions/node/v7.8.0/bin/node
-```
-
-And for later, here's how to update:
-
-```bash
-nvm install node --reinstall-packages-from=node
-```
-
-### Node Package Manager
-
-I have npm installed, and npm is mostly used locally for projects. The only thing I use globally at the moment is Gulp.
-
-#### Gulp
-
-Install Gulp globally.
-
-```bash
-npm install --global gulp-cli
-```
-
-### Ruby
-
-Ruby is required to run [Jekyll](/make-a-static-website-with-jekyll/), a popular static site generator. I'm going to download [Ruby Version Manager (rvm)](https://rvm.io/) to make sure I have the updated version of Ruby without messing with the built-in system Ruby.
-
-#### Download rvm
-
-```bash
-\curl -sSL https://get.rvm.io | bash -s stable
-```
-
-#### Install Ruby version
-
-You can look for and install the latest version by number, or by running the below command.
-
-```bash
-rvm install ruby-head
-```
-
-You can run `rvm list` to see the full list of versions available. To use the latest version, find the number and run this command.
-
-```bash
-rvm --default use 2.4.0
-```
-
-Confirm that you are using the latest version.
-
-```bash
-rvm -v
-```
-
-You can also test with `which ruby`, which will output your Ruby path and version number.
-
-```terminal
-/Users/yourusername/.rvm/rubies/ruby-2.4.0/bin/ruby
-```
-
-#### Install bundler
-
-Gem is the Ruby package manager that we're going to use to install bundler...a package manager. This is necessary to use Jekyll and useful for any other Ruby project.
-
-```bash
-gem install bundler
-```
-
-### Install Composer
-
-A necessity for modern PHP development.
-
-```bash
-curl -sS https://getcomposer.org/installer | php
-```
-
-Add it to the executable path.
-
-```bash
-sudo mv composer.phar /usr/local/bin/composer
-```
-
-Test it on the command line.
-
-```bash
-composer --version
-```
-
-### Virtual Hosts
-
-If you're using MAMP like I am to set up an Apache/MySQL/PHP/Python/Ruby environment, [here is a mini-tutorial](/setting-up-virtual-hosts) on setting up virtual hosts.
-
-### Terminal Colors
-
-I like to set a color scheme for my terminal. You can do this from **Preferences**, or by finding one online and opening the **.terminal** file, which will open a terminal with the new preferences. You can then save it as default. Add this to your **bash_profile** to enable colors in Terminal.
-
-I also added something that will show what Git branch you're on.
-
-```bash
-export CLICOLOR=1
-export LSCOLORS=ExFxBxDxCxegedabagacad
-parse_git_branch() {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-export PS1="\[\033[36m\]\u\[\033[m\]@\[\033[32m\]\h:\[\033[33;1m\]\w\$(parse_git_branch)\[\033[m\]\$ "
-```
-
-### Preferences
-
-I have a few preferences I like to set.
-
-- **Keyboard > Text >** Disable “Correct spelling automatically”
+## System Settings
+Update these later!
+Here are a few preferences I like to set:
 - **Security and Privacy > FileVault >** On (makes sure SSD is securely encrypted)
 - **Security and Privacy > Firewall >** On (extra security measure)
 - **Security and Privacy > General >** App Store and identified developers
 - **File Sharing >** Off
 - **Users & Groups > Login Items >** Spectacle, Flux (I like these to open on startup)
+### General
+### Appearance
+### Control Centre
+### Desktop & Dock
+### Privacy & Security
 
-A few more commands to change some defaults.
-
-#### Show Library folder
-
-```bash
-chflags nohidden ~/Library
-```
-
-#### Show hidden files
-
-```bash
-defaults write com.apple.finder AppleShowAllFiles YES
-```
-
-#### Show path bar
-
-```bash
-defaults write com.apple.finder ShowPathbar -bool true
-```
-
-#### Show status bar
-
-```bash
-defaults write com.apple.finder ShowStatusBar -bool true
-```
-
-#### Prevent Two Finger Scroll on Chrome
-
-```bash
-defaults write com.google.Chrome AppleEnableSwipeNavigateWithScrolls -bool FALSE
-```
+What else am I missing?
+* Desktop wallpapers—How to make them sync across devices?
+* Finder settings
+* Dock settings—make smaller, move to the left, instant pop up
+* Mouse — increase pointer & scroll speeds, set side buttons, etc.
+* Keyboard — modifier keys
+* Time machine backup

@@ -1,22 +1,58 @@
-tap 'caskroom/cask'
-  brew 'git'
-  brew 'npm'
+brew 'ata'
+brew 'cask'
+brew 'gh'
+brew 'git'
+brew 'htop'
+brew 'imagemagick'
+brew 'mailsy'
+brew 'mas'
+brew 'mpv'
+brew 'python'
+brew 'speedtest-cli'
+brew 'wifi-password'
+brew 'yt-dlp'
 
-  cask '1password'
-  cask 'alfred'
-  cask 'appcleaner'
-  cask 'atom'
-  cask 'bartender'
-  cask 'cheatsheet'
-  cask 'fantastical'
-  cask 'notion'
-  cask 'postman'
-  cask 'tunnelbear'
+cask '1password'
+cask 'appcleaner'
+cask 'arc'
+cask 'automattic-texts'
+cask 'bartender'
+cask 'cheatsheet'
+cask 'clay'
+cask 'cursor'
+cask 'daisydisk'
+cask 'descript'
+cask 'discord'
+cask 'limitless'
+cask 'linear-linear'
+cask 'logi-options+'
+cask 'loom'
+cask 'macwhisper'
+cask 'nordvpn'
+cask 'notion'
+cask 'notion-calendar'
+cask 'numi'
+cask 'poe'
+cask 'postman'
+cask 'raindropio'
+cask 'raycast'
+cask 'rewind'
+cask 'rize'
+cask 'rode-connect'
+cask 'screen-studio'
+cask 'shortcat'
+cask 'slack'
+cask 'spotify'
+cask 'streamlabs'
+cask 'superhuman'
+cask 'thingsmacsandboxhelper'
+cask 'visual-studio-code'
+cask 'zoom'
 
-  mas 'Bear', id: 1091189122
-  mas 'FuzzyTime', id: 950297057
-  mas 'LastPass', id: 926036361
-  mas 'Magnet', id: 441258766
-  mas 'Slack', id: 803453959
-  mas 'Spark', id: 1176895641
-  mas 'Things', id: 904280696
+mas 'Bear', id: 1091189122
+mas 'FuzzyTime', id: 950297057
+mas 'Kindle', id: 302584613
+mas 'LINE', id: 539883307
+mas 'One Thing', id: 1604176982
+mas 'Perplexity', id: 6714467650
+mas 'Things', id: 904280696
