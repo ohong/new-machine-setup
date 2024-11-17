@@ -108,6 +108,7 @@ touch Brewfile
 Below are the entire contents of my `Brewfile`, which will install all the above programs with a single command.
 
 ```js
+brew '1password-cli'
 brew 'ata'
 brew 'cask'
 brew 'gh'
@@ -158,6 +159,7 @@ cask 'superhuman'
 cask 'thingsmacsandboxhelper'
 cask 'visual-studio-code'
 cask 'zoom'
+cask 'chatgpt'
 
 mas 'Bear', id: 1091189122
 mas 'FuzzyTime', id: 950297057
@@ -189,7 +191,7 @@ curl -fsSL https://raw.githubusercontent.com/ohong/new-machine-setup/blob/master
 touch ~/.gitconfig
 ```
 
-Here I'll input my name, email, GitHub username, some aliases to be able to type less and do more, and connect Git to the OS X Keychain so I don't have to type my username and password every time I want to push to GitHub.
+Here I'll input my name, email, GitHub username, some aliases to be able to type less and do more:
 
 ```bash
 [user]
@@ -211,6 +213,35 @@ Here I'll input my name, email, GitHub username, some aliases to be able to type
 
 With the above aliases, I can run `git s` instead of `git status`, for example.
 
+### Change settings via command line
+Remove Dock delays:
+```
+defaults write com.apple.dock autohide-delay -float 0; defaults write com.apple.dock autohide-time-modifier -int 0;killall Dock
+```
+
+Disable disk warnings:
+```
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.DiskArbitration.diskarbitrationd.plist DADisableEjectNotification -bool YES && sudo pkill diskarbitrationd
+```
+
+Change screenshot default to JPG (smaller files vs. PNG):
+```
+defaults write com.apple.screencapture type jpg
+```
+
+Make hidden app icons transparent in Dock:
+```
+defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
+```
+## Sync app settings
+- [ ] Export the latest Raycast “Settings & Data”, then import into new machine.
+
+### Browser extensions
+- [ ] 1Password
+- [ ] uBlock Origin (N.B. no long compatible with Chromium after June 2025)
+- [ ] Archive Page
+- [ ] Raindrop.io
+
 ## System Settings
 Update these later!
 Here are a few preferences I like to set:
@@ -220,15 +251,43 @@ Here are a few preferences I like to set:
 - **File Sharing >** Off
 - **Users & Groups > Login Items >** Spectacle, Flux (I like these to open on startup)
 ### General
+* Switch to 24-hour time & show 24h time on Lock Screen
+* Open at Login: 
 ### Appearance
 ### Control Centre
 ### Desktop & Dock
+* Make dock smaller, small magnification
+* Move to left of the screen
+* Minimise windows using Scale Effect
+* Automatically hide and show the Dock = ON
+* Show recent apps = OFF
+* Tiled windows have margins = OFF
+* Default web browser = Arc
+* Hot corners:
+  * Top-left (+ Cmd) = Lock Screen
+  * Bottom-left (+ Cmd) = Notification Centre
+  * Top-right = Desktop
+  * Bottom-right = Mission Control
+
 ### Privacy & Security
 
 What else am I missing?
 * Desktop wallpapers—How to make them sync across devices?
 * Finder settings
-* Dock settings—make smaller, move to the left, instant pop up
-* Mouse — increase pointer & scroll speeds, set side buttons, etc.
-* Keyboard — modifier keys
+* Mouse
+  * Max pointer & scroll speeds
+  * Side buttons to move between desktop
+  * Wheel click = Cmd + W (close tab / window)
+  * Scroll direction = standard
+* Keyboard
+  * Fastest key repeat rate, shortest delay until repeat
+  * Remap modifier keys: Caps Lock = Escape, (for external keyboards) Option = Command, Command = Option
+  * Spotlight: Deselect shortcuts
 * Time machine backup
+---
+## Sandbox
+* Brew packages I’m testing: 
+* Apps testing: [Supercharge](https://sindresorhus.com/supercharge), [Windsurf](https://codeium.com/windsurf) (Cursor competitor)
+* Turn on unlock with Apple Watch 
+- keyboard > keyboard shortcuts > modifier keys: map caps lock to escape
+- Displays: More space
