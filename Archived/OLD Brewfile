@@ -1,0 +1,96 @@
+tap "homebrew/cask-fonts"
+tap "withgraphite/tap"
+brew "libtiff"
+brew "jpeg-xl"
+brew "aom"
+brew "glib"
+brew "libidn2"
+brew "p11-kit"
+brew "unbound"
+brew "gnutls"
+brew "icu4c@76"
+brew "harfbuzz"
+brew "libarchive"
+brew "libbluray"
+brew "pango"
+brew "tesseract"
+brew "ffmpeg"
+brew "freetds"
+brew "gcc"
+brew "libavif"
+brew "gh"
+brew "git"
+brew "pkgconf"
+brew "gobject-introspection"
+brew "libzip"
+brew "mas"
+brew "mpv"
+brew "neovim"
+brew "node"
+brew "numpy", link: false
+brew "openvino"
+brew "php"
+brew "poetry"
+brew "portaudio"
+brew "python@3.10"
+brew "python@3.9"
+brew "railway"
+brew "ripgrep"
+brew "rustup"
+brew "speedtest-cli"
+brew "tmux"
+brew "virtualenv", link: false
+brew "yarn"
+brew "youtube-dl"
+brew "zsh"
+brew "withgraphite/tap/graphite"
+cask "1password-cli"
+cask "automattic-texts"
+cask "font-hack-nerd-font"
+cask "ghostty"
+cask "insomnia"
+cask "shortcat"
+cask "windsurf"
+mas "1Focus", id: 969210610
+mas "Bear", id: 1091189122
+mas "Copilot", id: 1447330651
+mas "Craft", id: 1487937127
+mas "DaisyDisk", id: 411643860
+mas "Day One", id: 1055511498
+mas "Drafts", id: 1435957248
+mas "Endel", id: 1346247457
+mas "GarageBand", id: 682658836
+mas "Hush", id: 1544743900
+mas "iMovie", id: 408981434
+mas "Instapaper", id: 288545208
+mas "Instapaper Save", id: 1481302432
+mas "Keynote", id: 409183694
+mas "Kindle", id: 302584613
+mas "Kindle Classic", id: 405399194
+mas "LINE", id: 539883307
+mas "Magnet", id: 441258766
+mas "Messenger", id: 1480068668
+mas "Microsoft Excel", id: 462058435
+mas "Microsoft PowerPoint", id: 462062816
+mas "Microsoft Word", id: 462054704
+mas "Muse", id: 1501563902
+mas "NordVPN", id: 905953485
+mas "Numbers", id: 409203825
+mas "One Thing", id: 1604176982
+mas "Pages", id: 409201541
+mas "PayPal Honey", id: 1472777122
+mas "Perplexity", id: 6714467650
+mas "PiPifier", id: 1160374471
+mas "Save to Matter", id: 1548677272
+mas "Slack", id: 803453959
+mas "Speechify", id: 1624912180
+mas "Super Agent", id: 1568262835
+mas "TestFlight", id: 899247664
+mas "Things", id: 904280696
+mas "WhatsApp", id: 310633997
+mas "Xcode", id: 497799835
+vscode "anysphere.pyright"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "ritwickdey.liveserver"
