@@ -2,33 +2,13 @@
 
 **Motivation:** The follow spec details how I set up a brand new macOS computer, for writing, software development, and everyday productivity. I maintain it to streamline the process each time I do it.
 
-**Last updated:** 12 Nov 2024
+**Last updated:** 1 May 2026
 ## Info
 * Stored at [ohong/new-machine-setup](https://github.com/ohong/new-machine-setup)
   * https://github.com/ohong/new-machine-setup/blob/master/Brewfile
 * Filename: `~/dev/new-machine-setup/Brewfile`
-* Current OS: macOS Sequoia 15.1
-## Changelog
-### Nov 2024
-* Added a changelog
-* Removed the screenshots, unnecessary
-* No longer using (remove from Brewfile):
-  * Alfred, replaced by Raycast
-  * Atom, replaced by VS Code & Cursor
-  * Google Chrome, replaced by Arc browser
-  * iTerm, replaced by Warp
-  * Magnet, replaced by Raycast (Window Management)
-  * Dropbox, just use the web interface, or Google Drive or iCloud storage
-  * Fantastical, replaced by Notion Calendar
-  * Spark, replaced by Superhuman
-  * TunnelBear, replaced by NordVPN
-* Added new apps I use now under “Applications” & to the Brewfile
-* Removed step of adding `brewup` alias to my bash profile
-* Removed steps for installing Node JS, npm, Ruby, composer, virtual hosts. I just don’t use them enough to justify doing on every fresh setup.
-* Removed section on customising iTerm, I just use Warp now
-* Removed section on changing OS defaults from command line
-* Shortened section on SSH & combined it with GitHub set up
-* Added all Finder & System Settings changes
+* Current OS: macOS Tahoe 26.4.1
+* App configs (dotfiles, shell, editor settings, etc.) live in a separate dotfiles repo — this repo is just for the machine bootstrap.
 ## Applications
 All via the `Brewfile` `cask` and `mas` commands.
 ### Essential
@@ -39,45 +19,25 @@ All via the `Brewfile` `cask` and `mas` commands.
 * [x] Raycast — launcher
 * [x] Things 3 — task manager
 ### Programming
-- [x] Visual Studio Code
 - [x] Cursor — AI code editor
-- [x] Windsurf — another AI code editor
 - [x] Linear — project management
 - [x] Postman — API testing tool
 - [x] Warp — Terminal replacement
 ### Other
 - [x] AppCleaner
-- [x] Bartender 5 — menu bar organiser
 - [x] CheatSheet
-- [x] Clay
-- [x] Cubby
 - [x] DaisyDisk
-- [x] Descript
-- [x] Discord
-- [x] Limitless
 - [x] LINE
 - [x] Logi Options+
-- [x] Loom
 - [x] MacWhisper
 - [x] NordVPN
 - [x] Notion Calendar
 - [x] Numi
 - [x] One Thing
-- [x] Perplexity
-- [x] Poe
 - [x] Raindrop
-- [x] Rewind
-- [x] Rize — AI time tracking
-- [x] RODE Connect
 - [x] Screen Studio
-- [x] Shortcat
 - [x] Slack
-- [x] Spotify
-- [x] Streamlabs — Live streaming
-- [x] Superhuman
-- [x] Texts — Unified inbox for messages
 - [x] Wispr Flow — Voice dictation
-- [x] Zoom
 ## Install via command line
 ### Homebrew (macOS package manager)
 ```bash
@@ -147,7 +107,7 @@ With the above aliases, I can run `git s` instead of `git status`, for example.
 ### Change settings via command line
 Hide all icons on desktop:
 ```
-defaults write com.apple.finder CreateDesktop false;killall Finder
+defaults write com.apple.finder CreateDesktop false;killall Finder
 ```
 
 Remove Dock delays:
@@ -171,6 +131,7 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 ```
 ## Sync app settings
 - [x] Export the latest Raycast “Settings & Data”, then import into new machine.
+- [x] Pull down my dotfiles repo for shell, editor, and other app configs.
 ### Browser extensions
 - [x] 1Password
 - [x] uBlock Origin (N.B. no long compatible with Chromium after June 2025)
@@ -192,10 +153,8 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 ### General
 - [x] Switch to 24-hour time & show 24h time on Lock Screen
 * Open at Login:
-  - [x] Bartender 5
   - [x] CheatSheet
   - [x] Raycast
-  - [x] Rewind
   - [x] Supercharge
   - [x] Things Helper
 ### Appearance
@@ -217,7 +176,7 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
   - [x] Bottom-left (+ Cmd) = Notification Centre
   - [x] Top-right = Desktop
   - [x] Bottom-right = Mission Control
-### Displays
+### Displays
 - [x] More Space
 - [x] Night Shift: Turn on from Sunset to Sunrise
 ### Privacy & Security
@@ -243,4 +202,53 @@ defaults write com.apple.Dock showhidden -bool TRUE && killall Dock
 What else am I missing?
 * Desktop wallpapers—How to make them sync across devices?
 * Brew packages I’m testing: 
-* Apps testing: [Supercharge](https://sindresorhus.com/supercharge), [Windsurf](https://codeium.com/windsurf) (Cursor competitor)
+* Apps testing: [Supercharge](https://sindresorhus.com/supercharge)
+
+---
+## Changelog
+### May 2026
+* Bumped to macOS Tahoe 26.4.1
+* Called out that app configs live in a separate dotfiles repo
+* Moved the changelog to the bottom of the README
+* No longer using (removed from Brewfile and Applications list):
+  * Visual Studio Code — Cursor covers it
+  * Windsurf — another AI code editor I no longer reach for
+  * Bartender 5 — menu bar organiser
+  * Clay
+  * Cubby
+  * Descript
+  * Discord
+  * Limitless
+  * Loom
+  * Perplexity
+  * Poe
+  * Rewind
+  * Rize
+  * RODE Connect
+  * Shortcat
+  * Spotify
+  * Streamlabs
+  * Superhuman
+  * Texts
+  * Zoom
+* Cleaned up “Open at Login” to drop Bartender 5 and Rewind
+### Nov 2024
+* Added a changelog
+* Removed the screenshots, unnecessary
+* No longer using (remove from Brewfile):
+  * Alfred, replaced by Raycast
+  * Atom, replaced by VS Code & Cursor
+  * Google Chrome, replaced by Arc browser
+  * iTerm, replaced by Warp
+  * Magnet, replaced by Raycast (Window Management)
+  * Dropbox, just use the web interface, or Google Drive or iCloud storage
+  * Fantastical, replaced by Notion Calendar
+  * Spark, replaced by Superhuman
+  * TunnelBear, replaced by NordVPN
+* Added new apps I use now under “Applications” & to the Brewfile
+* Removed step of adding `brewup` alias to my bash profile
+* Removed steps for installing Node JS, npm, Ruby, composer, virtual hosts. I just don’t use them enough to justify doing on every fresh setup.
+* Removed section on customising iTerm, I just use Warp now
+* Removed section on changing OS defaults from command line
+* Shortened section on SSH & combined it with GitHub set up
+* Added all Finder & System Settings changes
